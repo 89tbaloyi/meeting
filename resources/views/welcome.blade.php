@@ -4,7 +4,13 @@
 <br>
 <?php
 echo "Register and Meet your partner and have fun!";
-?> 
+?>
+ ​<picture>
+  <source srcset="..." type="image/svg+xml">
+  <img src="..." class="img-fluid img-thumbnail" alt="...">
+</picture>
+
+
 </b>
 <br>
  <div class="content">
