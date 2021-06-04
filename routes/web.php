@@ -13,10 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/','welcome');
+Route::view('pretoria','pretoria');
+Route::view('Hammanskraal','Hammanskraal');
+Route::view('Mamelodi','Mamelodi');
 
-Route::get('pretoria', function () {
-    return view('pretoria');
+Route::get('customer',function(){
+    return view('internals/customers');
 });
