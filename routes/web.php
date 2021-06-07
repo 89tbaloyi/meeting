@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CustomersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/','welcome');
-Route::view('pretoria','pretoria');
-Route::view('Hammanskraal','Hammanskraal');
-Route::view('Mamelodi','Mamelodi');
-
-Route::get('customer',function(){
-    return view('internals/customers');
+Route::get(('/'),function(){
+    return view('layouts.app');
 });
+// Route::view('pretoria','pretoria');
+// Route::view('Hammanskraal','Hammanskraal');
+// Route::view('Mamelodi','Mamelodi');
+
+Route::resource('customers',CustomersController::class);
+
+      
