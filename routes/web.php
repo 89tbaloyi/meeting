@@ -17,10 +17,11 @@ use App\Http\Controllers\CustomersController;
 Route::get(('/'),function(){
     return view('layouts.app');
 });
-// Route::view('pretoria','pretoria');
-// Route::view('Hammanskraal','Hammanskraal');
-// Route::view('Mamelodi','Mamelodi');
+//Route::view('pretoria','pretoria');
+ //Route::view('Hammanskraal','Hammanskraal');
+ //Route::view('Mamelodi','Mamelodi');
 
 Route::resource('customers',CustomersController::class);
+Route::resource('layouts',MamelodiController::class);
 
       
